@@ -70,10 +70,7 @@ def main():
 
     # parse arguments
     args = parser.parse_args()
-    if not args._get_args():
-        parser.print_help()
-    else:
-        args.func(args)
+    args.func(args)
 
 
 if __name__ == "__main__":
